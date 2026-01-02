@@ -20,7 +20,7 @@ const Register = () => {
       });
 
       // After successful registration → redirect to login
-      navigate("/");
+      navigate("/login");
     } catch (err) {
       setError("Registration failed. Try a different username.");
     }
@@ -29,7 +29,7 @@ const Register = () => {
   return (
     <div className="auth-wrapper">
       <div className="auth-card">
-        <h1 className="app-title">SplitSmart</h1>
+        <h1 className="app-title">💜SplitSmart</h1>
         <p className="subtitle">Create your account</p>
 
         {error && <p className="error-text">{error}</p>}
