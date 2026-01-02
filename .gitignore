@@ -1,0 +1,18 @@
+# Node / React
+node_modules/
+build/
+dist/
+
+# Python / Django
+__pycache__/
+*.pyc
+.env
+venv/
+.env/
+
+# Database
+db.sqlite3
+
+# OS / Editor
+.vscode/
+.DS_Store
