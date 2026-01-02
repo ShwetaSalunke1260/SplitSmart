@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://splitsmart-fyef.onrender.com",
+  baseURL: "https://splitsmart-fyef.onrender.com/api/",
 });
 
 // Automatically attach JWT token

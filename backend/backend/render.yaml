@@ -3,7 +3,6 @@ services:
     name: splitsmart-backend
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn backend.wsgi
-    envVars:
-      - key: DJANGO_SETTINGS_MODULE
-        value: backend.settings
+    startCommand: |
+      python manage.py migrate &&
+      gunicorn backend.wsgi:application
