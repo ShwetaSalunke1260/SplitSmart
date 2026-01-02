@@ -51,7 +51,7 @@ const Reports = () => {
 
     const groupName =
   selectedGroup
-    ? groups.find(g => g.id == selectedGroup)?.name
+    ? groups.find(g => g.id === selectedGroup)?.name
     : "All_Groups";
 
     const doc = new jsPDF();
