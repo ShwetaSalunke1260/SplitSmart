@@ -91,7 +91,7 @@ const Reports = () => {
       ]),
     });
 
-    doc.save(`SplitSmart_Report.pdf`);
+    doc.save(`SplitSmart_${groupName}_Report.pdf`);
 
   };
 
