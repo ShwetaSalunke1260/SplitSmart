@@ -30,8 +30,8 @@ const Login = () => {
  return (
   <div className="auth-wrapper">
     <div className="auth-card">
-      <h1 className="app-title">SplitSmart</h1>
-      <p className="subtitle">Split expenses. Stay stress-free.</p>
+      <h1 className="app-title">💜SplitSmart</h1>
+      <p className="subtitle">🤝 Split expenses. Stay stress-free.</p>
 
       {error && <p className="error-text">{error}</p>}
 
