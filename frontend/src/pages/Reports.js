@@ -48,18 +48,13 @@ const Reports = () => {
 
   /* ================= DOWNLOAD PDF ================= */
   const downloadPDF = () => {
-
-    const groupName =
-  selectedGroup
-    ? groups.find(g => g.id === selectedGroup)?.name
+    const selectedGroupId = Number(selectedGroup);
+    const groupName =selectedGroup
+    ? groups.find(g => g.id === selectedGroupId)?.name || "Unknown_Group"
     : "All_Groups";
 
+    console.log("PDF groupName:", groupName);
     const doc = new jsPDF();
-
-    // doc.addFileToVFS("Roboto-Regular.ttf", RobotoFont);
-    // doc.addFont("Roboto-Regular.ttf", "Roboto", "normal");
-    // doc.setFont("Roboto");
-
 
     doc.setFontSize(18);
     doc.text("SplitSmart - Reports & History", 14, 20);
@@ -94,6 +89,14 @@ const Reports = () => {
     doc.save(`SplitSmart_${groupName}_Report.pdf`);
 
   };
+
+  console.log("selectedGroup:", selectedGroup);
+console.log("groups:", groups);
+console.log(
+  "matched group:",
+  groups.find(g => g.id === Number(selectedGroup))
+);
+
 
   return (
     <div className="auth-wrapper">
