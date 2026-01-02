@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-sd40_*jg-h6-ol(bdme&2^8690(*0c^sflvjnv#o&5fl@yn53c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["splitsmart-fyef.onrender.com"]
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "splitsmart-fyef.onrender.com"]
 
 
 # Application definition
