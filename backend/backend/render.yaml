@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: splitsmart-backend
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: |
-      python manage.py migrate &&
-      gunicorn backend.wsgi:application
