@@ -103,7 +103,7 @@ console.log(
       <div className="auth-card settle-card">
 
         {/* ===== TITLE ===== */}
-        <h2 className="report-title">Reports & History</h2>
+        <h2 className="report-title">📊 Reports & History</h2>
 
         {/* ===== GROUP FILTER ===== */}
         <div className="filter-box">
@@ -148,7 +148,7 @@ console.log(
 
         {/* ===== EXPENSE HISTORY ===== */}
         <div className="history-card">
-          <h3>Expense History</h3>
+          <h3>💳Expense History</h3>
 
           {expenses.length === 0 ? (
             <p className="muted">No expenses found</p>
@@ -164,7 +164,7 @@ console.log(
 
         {/* ===== SETTLEMENT HISTORY ===== */}
         <div className="history-card">
-          <h3>Settlement History</h3>
+          <h3>💳Settlement History</h3>
 
           {settlements.length === 0 ? (
             <p className="muted">No settlements yet</p>

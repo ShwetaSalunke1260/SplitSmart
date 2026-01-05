@@ -44,7 +44,7 @@ const CreateGroup = () => {
   return (
     <div className="auth-wrapper" >
       <div className="auth-card">
-      <h2 className="app-title">CREATE GROUP</h2>
+      <h2 className="app-title">🏷️CREATE GROUP</h2>
       <br></br>
 
       <form onSubmit={handleCreate} className="form-card">

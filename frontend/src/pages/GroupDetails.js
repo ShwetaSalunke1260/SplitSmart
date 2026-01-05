@@ -168,7 +168,7 @@ const GroupDetails = () => {
                     ))}
                 </select>
 
-                <button onClick={handleAddMember}>Add</button>
+                <button className="create-group-btn" onClick={handleAddMember}>Add</button>
               </div>
             )}
           </>

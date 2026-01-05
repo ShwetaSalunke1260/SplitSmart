@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="header">
-  <h2>SplitSmart</h2>
+  <h2>💜SplitSmart</h2>
   <button className="logout-btn" onClick={logout}>Logout</button>
 </header>
 

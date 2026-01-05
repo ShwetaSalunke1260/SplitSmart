@@ -104,7 +104,7 @@ useEffect(() => {
 
       <BalanceCard youGet={youGet} youOwe={youOwe} />
 
-      <h3 className="section-title">Recent Groups</h3>
+      <h3 className="section-title">👥Recent Groups</h3>
 
       <div className="group-row">
         {groups.length === 0 ? (
@@ -131,7 +131,7 @@ useEffect(() => {
   + Create Group
 </button>
 </div>
-       <h3 className="section-title">Recent Expenses</h3>
+       <h3 className="section-title">💸Recent Expenses</h3>
        <div className="create-group-wrapper">
        <button className="create-group-btn" onClick={() => navigate("/reports")}>Reports</button>
        </div>
